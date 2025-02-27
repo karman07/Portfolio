@@ -2,9 +2,9 @@ import React from "react";
 import "./Progress.scss";
 import {illustration, techStack} from "../../portfolio";
 import {Fade} from "react-reveal";
-import Build from "../../assets/lottie/build";
+import Build from "../../assets/lottie/build.json";
 import DisplayLottie from "../../components/displayLottie/DisplayLottie";
-
+import SkillImage from '../../assets/images/skill.svg'
 export default function StackProgress() {
   if (techStack.viewSkillBars) {
     return (
@@ -28,14 +28,10 @@ export default function StackProgress() {
           </div>
 
           <div className="skills-image">
-            {illustration.animated ? (
-              <DisplayLottie animationData={Build} />
-            ) : (
               <img
                 alt="Skills"
-                src={require("../../assets/images/skill.svg")}
+                src={SkillImage}
               />
-            )}
           </div>
         </div>
       </Fade>
