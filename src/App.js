@@ -9,7 +9,7 @@ function App() {
     <BrowserRouter>
     <Routes>
       <Route path="/" element={<Main />} />
-      <Route path="/app-ads.txt" element={<AdsTxt />} />
+      {/* <Route path="/app-ads.txt" element={<AdsTxt />} /> */}
     </Routes>
     </BrowserRouter>
   );
